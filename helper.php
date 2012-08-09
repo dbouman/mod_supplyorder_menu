@@ -8,7 +8,7 @@
  **/
 
 JLoader::import('joomla.application.component.model');
-JLoader::import( 'user', 'components' . DS . 'com_supplyorder' . DS . 'models' );
+
 
 class ModSupplyOrderMenuHelper
 {
@@ -17,6 +17,10 @@ class ModSupplyOrderMenuHelper
      */    
     function getRoleId( )
     {
+    	if(!class_exists('SupplyOrderModelUser')) {
+    		JLoader::import( 'user', 'components' . DS . 'com_supplyorder' . DS . 'models' );
+    	}
+    	
     	$userModel = JModel::getInstance( 'User', 'SupplyOrderModel' );
     	 
         if(!$userModel) {
