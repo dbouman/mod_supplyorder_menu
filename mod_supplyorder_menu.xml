@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+    <name>Supply Order Menu</name>
+    <author>Howard County Library</author>
+    <version>1.5.0</version>
+    <description>Provides a menu for the supply order component.</description>
+    <files>
+        <filename>mod_supplyorder_menu.xml</filename>
+        <filename module="mod_supplyorder_menu">mod_supplyorder_menu.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+    </files>
+	<languages>
+        <!-- Any language files included with the module -->
+        <language tag="en-GB">en-GB.mod_supplyorder_menu.ini</language>
+    </languages>
+    <params>
+    </params>
+</install>
