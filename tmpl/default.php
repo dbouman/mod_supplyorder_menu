@@ -4,7 +4,7 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
 ?>
 
 <?php 
-if ($role_id == 4) {
+if ($role_id == 5) {
 ?>
 Accounting
 <ul>
@@ -25,8 +25,8 @@ Accounting
 ?>
 
 <?php
-// Tier 1 & 2 Approval 
-if ($role_id == 2 || $role_id == 3) {
+// Tier 1,2, & 3 Approval 
+if ($role_id == 2 || $role_id == 3 || $role_id == 4) {
 ?>
 Approval
 <ul>
