@@ -33,5 +33,9 @@ class ModSupplyOrderMenuHelper
 		
 		return $role_id;
     }
+    
+    static public function genLink($link) {
+    	return JRoute::_($link.'&amp;Itemid='.JRequest::getint( 'Itemid' ));
+    }
 }
 ?>
